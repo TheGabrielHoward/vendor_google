@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sailfish/proprietary/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_build.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/sysconfig/marlin_common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/marlin_common.xml:google \
+    vendor/google_devices/sailfish/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml:google \
     vendor/google_devices/sailfish/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so:google \
