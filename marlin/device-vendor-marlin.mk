@@ -146,5 +146,19 @@ PRODUCT_PACKAGES += \
     virtual_touchpad
 
 # Partitions to add in AB OTA images
-AB_OTA_PARTITIONS += vendor
+AB_OTA_PARTITIONS += vendor \
+    aboot \
+    apdp \
+    bootlocker \
+    cmnlib32 \
+    cmnlib64 \
+    devcfg \
+    hosd \
+    hyp \
+    keymaster \
+    modem \
+    pmic \
+    rpm \
+    tz \
+    xbl
 
