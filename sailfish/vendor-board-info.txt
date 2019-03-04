@@ -1,3 +1,3 @@
 require board=sailfish
-require version-bootloader=8996-012001-1811131534
+require version-bootloader=8996-012001-1812132253
 require version-baseband=8996-130181-1811270246
