@@ -77,6 +77,8 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
+    LowPowerMonitorDeviceInterface \
+    LowPowerMonitorDeviceStub \
     PowerAnomalyDataModemInterface \
     PowerAnomalyStub \
     VerizonUnifiedSettings \
@@ -96,7 +98,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9335 \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
-    LLKAgent \
     MyVerizonServices \
     OBDM_Permissions \
     OemDmTrigger \

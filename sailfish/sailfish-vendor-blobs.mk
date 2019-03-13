@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sailfish/proprietary/etc/permissions/com.google.android.camera.experimental2016.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.camera.experimental2016.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/permissions/com.verizon.apn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.apn.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml:google \
-    vendor/google_devices/sailfish/proprietary/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.llkagent.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/permissions/com.verizon.provider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.provider.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.services.xml:google \
     vendor/google_devices/sailfish/proprietary/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/features-verizon.xml:google \
