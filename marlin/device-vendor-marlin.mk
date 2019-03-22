@@ -35,8 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true \
     ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/google_devices/marlin/overlay
-
 # Prebuilt APKs/JARs from 'vendor/app'
 PRODUCT_PACKAGES += \
     QAS_DVC_MSP \
