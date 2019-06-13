@@ -6207,7 +6207,7 @@
 (allow lmkd_28_0 sysfs_lowmemorykiller_28_0 (file (ioctl read getattr lock map open)))
 (allow lmkd_28_0 sysfs_lowmemorykiller_28_0 (lnk_file (ioctl read getattr lock map open)))
 (allow lmkd_28_0 sysfs_lowmemorykiller_28_0 (file (write lock append map open)))
-(allow lmkd_28_0 appdomain (process (sigkill)))
+(allow lmkd_28_0 appdomain (process (sigkill setsched)))
 (allow lmkd_28_0 cgroup_28_0 (dir (remove_name rmdir)))
 (allow lmkd_28_0 cgroup_28_0 (file (ioctl read getattr lock map open)))
 (allow lmkd_28_0 self (capability (sys_nice)))

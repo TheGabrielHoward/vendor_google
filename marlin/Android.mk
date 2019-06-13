@@ -18,66 +18,6 @@ ifeq ($(TARGET_DEVICE),marlin)
 include vendor/google_devices/marlin/AndroidBoardVendor.mk
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QAS_DVC_MSP
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/QAS_DVC_MSP/QAS_DVC_MSP.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyService
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/QtiTelephonyService/QtiTelephonyService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := RCSBootstraputil
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/RCSBootstraputil/RCSBootstraputil.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SecureExtAuthService
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/SecureExtAuthService/SecureExtAuthService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := TimeService
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := atfwd
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -150,12 +90,60 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := QAS_DVC_MSP
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
+LOCAL_SRC_FILES := vendor/app/QAS_DVC_MSP/QAS_DVC_MSP.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiTelephonyService
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
+LOCAL_SRC_FILES := vendor/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := radioconfig
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
 LOCAL_SRC_FILES := vendor/app/radioconfig/radioconfig.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := RCSBootstraputil
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
+LOCAL_SRC_FILES := vendor/app/RCSBootstraputil/RCSBootstraputil.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SecureExtAuthService
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
+LOCAL_SRC_FILES := vendor/app/SecureExtAuthService/SecureExtAuthService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -174,6 +162,18 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := TimeService
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
+LOCAL_SRC_FILES := vendor/app/TimeService/TimeService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := vzw_msdc_api
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -186,22 +186,22 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyServicelibrary
+LOCAL_MODULE := embmslibrary
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/framework
-LOCAL_SRC_FILES := vendor/framework/QtiTelephonyServicelibrary.jar
+LOCAL_SRC_FILES := vendor/framework/embmslibrary.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := embmslibrary
+LOCAL_MODULE := QtiTelephonyServicelibrary
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/framework
-LOCAL_SRC_FILES := vendor/framework/embmslibrary.jar
+LOCAL_SRC_FILES := vendor/framework/QtiTelephonyServicelibrary.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -244,46 +244,18 @@ LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := VZWAPNLib
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
-LOCAL_SRC_FILES := proprietary/app/VZWAPNLib/VZWAPNLib.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
 LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
-LOCAL_REQUIRED_MODULES := libimsmedia_jni_64.so libimscamera_jni_64.so
+LOCAL_REQUIRED_MODULES := libimscamera_jni_64.so libimsmedia_jni_64.so
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libimsmedia_jni_64.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /system/lib64/libimsmedia_jni.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app/ims/lib/arm64/libimsmedia_jni.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
 include $(CLEAR_VARS)
 LOCAL_MODULE := libimscamera_jni_64.so
 LOCAL_MODULE_CLASS := FAKE
@@ -300,6 +272,45 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) rm -rf $(SYMLINK)
 	$(hide) ln -sf $(TARGET) $(SYMLINK)
 	$(hide) touch $@
+include $(CLEAR_VARS)
+LOCAL_MODULE := libimsmedia_jni_64.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /system/lib64/libimsmedia_jni.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app/ims/lib/arm64/libimsmedia_jni.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := VZWAPNLib
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
+LOCAL_SRC_FILES := proprietary/app/VZWAPNLib/VZWAPNLib.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.camera.experimental2016
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
+LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2016.jar
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := LowPowerMonitorDeviceInterface
@@ -346,33 +357,22 @@ LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := VerizonUnifiedSettings
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
-LOCAL_SRC_FILES := proprietary/framework/VerizonUnifiedSettings.jar
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.google.android.camera.experimental2016
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
-LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2016.jar
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := VerizonUnifiedSettings
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
+LOCAL_SRC_FILES := proprietary/framework/VerizonUnifiedSettings.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -405,12 +405,12 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CNEService
+LOCAL_MODULE := CarrierSetup
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CarrierSetup/CarrierSetup.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -418,12 +418,12 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CarrierSetup
+LOCAL_MODULE := CNEService
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/CarrierSetup/CarrierSetup.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -457,13 +457,12 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DMService
+LOCAL_MODULE := DiagMon
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
-LOCAL_REQUIRED_MODULES := libdmjavaplugin_32.so libdmengine_32.so
+LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -471,21 +470,19 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libdmjavaplugin_32.so
-LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE := DMService
 LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmjavaplugin.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app/DMService/lib/arm/libdmjavaplugin.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
+LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
+LOCAL_REQUIRED_MODULES := libdmengine_32.so libdmjavaplugin_32.so
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libdmengine_32.so
 LOCAL_MODULE_CLASS := FAKE
@@ -502,19 +499,22 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) rm -rf $(SYMLINK)
 	$(hide) ln -sf $(TARGET) $(SYMLINK)
 	$(hide) touch $@
-
 include $(CLEAR_VARS)
-LOCAL_MODULE := DiagMon
+LOCAL_MODULE := libdmjavaplugin_32.so
+LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmjavaplugin.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app/DMService/lib/arm/libdmjavaplugin.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentOKGoogleWCD9335
@@ -582,12 +582,38 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := obdm_stub
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
+LOCAL_SRC_FILES := proprietary/priv-app/obdm_stub/obdm_stub.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := OemDmTrigger
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
 LOCAL_SRC_FILES := proprietary/priv-app/OemDmTrigger/OemDmTrigger.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -673,32 +699,6 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := obdm_stub
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/obdm_stub/obdm_stub.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_OWNER := google
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := wcd9320_anc.bin__wcd9320_anc.bin__0
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
@@ -740,108 +740,6 @@ LOCAL_MODULE_OWNER := google
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /data/misc/audio/mbhc.bin
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/system/etc/firmware/wcd9320/wcd9320_mbhc.bin
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := eglSubDriverAndroid_32.so__eglSubDriverAndroid.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/eglSubDriverAndroid.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/eglSubDriverAndroid.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libEGL_adreno_32.so__libEGL_adreno.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libEGL_adreno.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libEGL_adreno.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libGLESv1_CM_adreno_32.so__libGLESv1_CM_adreno.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libGLESv1_CM_adreno.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libGLESv1_CM_adreno.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libGLESv2_adreno_32.so__libGLESv2_adreno.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libGLESv2_adreno.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libGLESv2_adreno.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libq3dtools_adreno_32.so__libq3dtools_adreno.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libq3dtools_adreno.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libq3dtools_adreno.so
-$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
-$(LOCAL_BUILT_MODULE):
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libq3dtools_esx_32.so__libq3dtools_esx.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := google
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libq3dtools_esx.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libq3dtools_esx.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
 	$(hide) mkdir -p $(dir $@)
@@ -944,6 +842,108 @@ LOCAL_MODULE_OWNER := google
 include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /vendor/lib64/egl/libq3dtools_esx.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib64/libq3dtools_esx.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := eglSubDriverAndroid_32.so__eglSubDriverAndroid.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/eglSubDriverAndroid.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/eglSubDriverAndroid.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libEGL_adreno_32.so__libEGL_adreno.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libEGL_adreno.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libEGL_adreno.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libGLESv1_CM_adreno_32.so__libGLESv1_CM_adreno.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libGLESv1_CM_adreno.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libGLESv1_CM_adreno.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libGLESv2_adreno_32.so__libGLESv2_adreno.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libGLESv2_adreno.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libGLESv2_adreno.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libq3dtools_adreno_32.so__libq3dtools_adreno.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libq3dtools_adreno.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libq3dtools_adreno.so
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libq3dtools_esx_32.so__libq3dtools_esx.so
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := google
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib/egl/libq3dtools_esx.so
+$(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/vendor/lib/libq3dtools_esx.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
 	$(hide) mkdir -p $(dir $@)

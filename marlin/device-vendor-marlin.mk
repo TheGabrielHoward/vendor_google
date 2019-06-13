@@ -37,25 +37,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Prebuilt APKs/JARs from 'vendor/app'
 PRODUCT_PACKAGES += \
-    QAS_DVC_MSP \
-    QtiTelephonyService \
-    RCSBootstraputil \
-    SecureExtAuthService \
-    TimeService \
     atfwd \
     colorservice \
     datastatusnotification \
     embms \
     fastdormancy \
     imssettings \
+    QAS_DVC_MSP \
+    QtiTelephonyService \
     radioconfig \
+    RCSBootstraputil \
+    SecureExtAuthService \
     shutdownlistener \
+    TimeService \
     vzw_msdc_api
 
 # Prebuilt APKs/JARs from 'vendor/framework'
 PRODUCT_PACKAGES += \
-    QtiTelephonyServicelibrary \
     embmslibrary \
+    QtiTelephonyServicelibrary \
     qti-vzw-ims-internal \
     rcsservice
 
@@ -65,71 +65,71 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
-    VZWAPNLib \
-    ims
+    ims \
+    VZWAPNLib
 
 # Prebuilt APKs libs symlinks from 'proprietary/app'
 PRODUCT_PACKAGES += \
-    libimsmedia_jni_64.so \
-    libimscamera_jni_64.so
+    libimscamera_jni_64.so \
+    libimsmedia_jni_64.so
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
+    com.google.android.camera.experimental2016 \
     LowPowerMonitorDeviceInterface \
     LowPowerMonitorDeviceStub \
     PowerAnomalyDataModemInterface \
     PowerAnomalyStub \
-    VerizonUnifiedSettings \
-    com.google.android.camera.experimental2016 \
-    qcrilhook
+    qcrilhook \
+    VerizonUnifiedSettings
 
 # Prebuilt APKs/JARs from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
     AppDirectedSMSService \
     Asdiv \
-    CNEService \
     CarrierSetup \
+    CNEService \
     ConnMO \
     DCMO \
-    DMService \
     DiagMon \
+    DMService \
     HotwordEnrollmentOKGoogleWCD9335 \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
     MyVerizonServices \
     OBDM_Permissions \
+    obdm_stub \
     OemDmTrigger \
+    qcrilmsgtunnel \
     SprintDM \
     SprintHM \
     TetheringEntitlement \
     VerizonAuthDialog \
     VzwOmaTrigger \
-    WfcActivation \
-    obdm_stub \
-    qcrilmsgtunnel
+    WfcActivation
 
 # Prebuilt APKs libs symlinks from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
-    libdmjavaplugin_32.so \
-    libdmengine_32.so
+    libdmengine_32.so \
+    libdmjavaplugin_32.so
 
 # Standalone symbolic links
 PRODUCT_PACKAGES += \
     wcd9320_anc.bin__wcd9320_anc.bin__0 \
     wcd9320_mad_audio.bin__wcd9320_mad_audio.bin__1 \
     mbhc.bin__wcd9320_mbhc.bin__2 \
-    eglSubDriverAndroid_32.so__eglSubDriverAndroid.so \
-    libEGL_adreno_32.so__libEGL_adreno.so \
-    libGLESv1_CM_adreno_32.so__libGLESv1_CM_adreno.so \
-    libGLESv2_adreno_32.so__libGLESv2_adreno.so \
-    libq3dtools_adreno_32.so__libq3dtools_adreno.so \
-    libq3dtools_esx_32.so__libq3dtools_esx.so \
     eglSubDriverAndroid_64.so__eglSubDriverAndroid.so \
     libEGL_adreno_64.so__libEGL_adreno.so \
     libGLESv1_CM_adreno_64.so__libGLESv1_CM_adreno.so \
     libGLESv2_adreno_64.so__libGLESv2_adreno.so \
     libq3dtools_adreno_64.so__libq3dtools_adreno.so \
-    libq3dtools_esx_64.so__libq3dtools_esx.so
+    libq3dtools_esx_64.so__libq3dtools_esx.so \
+    eglSubDriverAndroid_32.so__eglSubDriverAndroid.so \
+    libEGL_adreno_32.so__libEGL_adreno.so \
+    libGLESv1_CM_adreno_32.so__libGLESv1_CM_adreno.so \
+    libGLESv2_adreno_32.so__libGLESv2_adreno.so \
+    libq3dtools_adreno_32.so__libq3dtools_adreno.so \
+    libq3dtools_esx_32.so__libq3dtools_esx.so
 
 # Enforced modules from user configuration
 PRODUCT_PACKAGES += \
