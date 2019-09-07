@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/product/lib/libdmjavaplugin.so:system/product/lib/libdmjavaplugin.so \
     vendor/google/sailfish/proprietary/product/lib64/libaptXHD_encoder.so:system/product/lib64/libaptXHD_encoder.so \
     vendor/google/sailfish/proprietary/product/lib64/libaptX_encoder.so:system/product/lib64/libaptX_encoder.so \
+    vendor/google/sailfish/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:system/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
     vendor/google/sailfish/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:system/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 
 PRODUCT_PACKAGES += \
