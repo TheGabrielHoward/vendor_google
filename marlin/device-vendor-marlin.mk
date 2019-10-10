@@ -59,10 +59,6 @@ PRODUCT_PACKAGES += \
     qti-vzw-ims-internal \
     rcsservice
 
-# Prebuilt APKs/JARs from 'vendor/overlay'
-PRODUCT_PACKAGES += \
-    PixelThemeOverlay
-
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
     ims \
