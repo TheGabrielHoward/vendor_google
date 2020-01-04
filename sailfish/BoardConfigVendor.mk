@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Copyright (C) 2017-2019 The LineageOS Project
+=======
+# Copyright (C) 2019-2020 The LineageOS Project
+>>>>>>> b59c35d2... marlin/sailfish: Update blobs from Dec 2019 QP1A.191005.007.A3
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
