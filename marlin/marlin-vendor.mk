@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     VzwOmaTrigger \
     qcrilmsgtunnel \
     VZWAPNLib \
+    CarrierServices \
     CarrierSettings \
     CarrierSetup \
     ConnMO \
